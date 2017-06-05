@@ -15,7 +15,7 @@ continuous word embedding features.
 
 The original dataset should be converted to BIO-style annotation, see ```data/ner/get_data.md``` .
 
-Before run, check the ```data/ner/bin/make.eng.2016``` tool (code modification required) to generate data needed.
+Before run, check the ```data/ner/bin/make.eng.2016``` tool (code modification required) to generate necessary training and test data !!!
 
 ###Training an NER tagger
 

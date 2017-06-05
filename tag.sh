@@ -5,12 +5,14 @@ if [ $# -ne 2 ]; then
     exit 1
 fi
 
-root_dir=data/ner/
-inst_dir=$root_dir/instances/
-model_dir=$root_dir/models/
+root_dir=data/ner
+inst_dir=$root_dir/instances
+model_dir=$root_dir/models
+bin_dir=$root_dir/bin
+
 model=$model_dir/$1.model
 
-predict_dir=$root_dir/predict/
+predict_dir=$root_dir/predict
 if [ ! -d $model_dir ]; then
     mkdir $model_dir
 fi
@@ -37,5 +39,4 @@ paste $gold_test $test_predict > $eval_dir/dev.$1.eval"
 sed -i 's/^\t//g' $eval_dir/dev.$1.eval"
 
 echo "----Performance(Test)----"
-perl example/conlleval.pl -d "\t" < $eval_dir/dev.$1.eval"
-
+perl $bin_dir/conlleval -d "\t" < $eval_dir/dev.$1.eval"

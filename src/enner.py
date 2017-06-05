@@ -525,7 +525,7 @@ binarize_dir  = "./data/binarize/"
 emb_dir       = "./data/emb-manaal"
 brown_dir     = "./data/brown/"
 kmcluster_dir = "./data/kmcluster/"
-proto_dir     = "./data/proto/code/"
+proto_dir     = "./data/proto/"
 
 import os.path
 if __name__ == '__main__':

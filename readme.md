@@ -13,7 +13,9 @@ continuous word embedding features.
 ###Data you need:
 * [CoNLL-2003 NER dataset](http://www.clips.ua.ac.be/conll2003/ner/)
 
-The original dataset should be converted to BIO-style annotation.
+The original dataset should be converted to BIO-style annotation, see ```data/ner/get_data.md``` .
+
+Before run, check the ```data/ner/bin/make.eng.2016``` tool (code modification required) to generate data needed.
 
 ###Training an NER tagger
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /export/a04/jguo/work/emnlp14-semi
+#cd /export/a04/jguo/work/emnlp14-semi
 
 root_dir=data/ner/
 
